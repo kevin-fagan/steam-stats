@@ -144,7 +144,7 @@ func messageFriends(m *discordgo.MessageCreate, steam steam.Steam, player steam.
 
 	embed := &discordgo.MessageEmbed{
 		Footer: &discordgo.MessageEmbedFooter{
-			Text: "Friend information is dependent upon the users privacy settings.",
+			Text: "Friend information is dependent upon the user's privacy settings.",
 		},
 		Color: 0x66c0f4,
 		Thumbnail: &discordgo.MessageEmbedThumbnail{
@@ -161,7 +161,7 @@ func messageFriends(m *discordgo.MessageCreate, steam steam.Steam, player steam.
 				Inline: true,
 			},
 			{
-				Name:   "Newes Friend",
+				Name:   "Newest Friend",
 				Value:  newestFriend,
 				Inline: true,
 			},
@@ -203,7 +203,7 @@ func messageGames(m *discordgo.MessageCreate, steam steam.Steam, player steam.Pl
 
 	embed := &discordgo.MessageEmbed{
 		Footer: &discordgo.MessageEmbedFooter{
-			Text: "Game information is dependent upon the users privacy settings.",
+			Text: "Game information is dependent upon the user's privacy settings.",
 		},
 		Color: 0x66c0f4,
 		Thumbnail: &discordgo.MessageEmbedThumbnail{
@@ -267,7 +267,7 @@ func messageGames(m *discordgo.MessageCreate, steam steam.Steam, player steam.Pl
 func messageBans(player steam.Player) discordgo.MessageEmbed {
 	embed := &discordgo.MessageEmbed{
 		Footer: &discordgo.MessageEmbedFooter{
-			Text: "Ban information is dependent upon the users privacy settings.",
+			Text: "Ban information is dependent upon the user's privacy settings.",
 		},
 		Color: 0x66c0f4,
 		Thumbnail: &discordgo.MessageEmbedThumbnail{
