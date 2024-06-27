@@ -329,7 +329,7 @@ func messageProfile(player steam.Player) discordgo.MessageEmbed {
 
 	embed := &discordgo.MessageEmbed{
 		Footer: &discordgo.MessageEmbedFooter{
-			Text: "Profile information is dependent upon the users privacy settings.",
+			Text: "Profile information is dependent upon the user's privacy settings.",
 		},
 		Color: 0x66c0f4,
 		Thumbnail: &discordgo.MessageEmbedThumbnail{
